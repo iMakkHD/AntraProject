@@ -7,10 +7,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Entity\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\MovieStoreApp.Core\MovieStoreApp.Core.csproj" />
   </ItemGroup>
 

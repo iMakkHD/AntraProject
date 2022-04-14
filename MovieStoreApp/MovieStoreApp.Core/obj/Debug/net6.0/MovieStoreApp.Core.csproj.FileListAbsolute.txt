@@ -1,0 +1,12 @@
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.deps.json
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\bin\Debug\net6.0\MovieStoreApp.Core.pdb
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.csproj.AssemblyReference.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.AssemblyInfoInputs.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.AssemblyInfo.cs
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.csproj.CoreCompileInputs.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\refint\MovieStoreApp.Core.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\MovieStoreApp.Core.pdb
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Core\obj\Debug\net6.0\ref\MovieStoreApp.Core.dll

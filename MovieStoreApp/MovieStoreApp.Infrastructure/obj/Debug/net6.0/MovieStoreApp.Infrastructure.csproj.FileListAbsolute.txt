@@ -1,0 +1,15 @@
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\bin\Debug\net6.0\MovieStoreApp.Infrastructure.deps.json
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\bin\Debug\net6.0\MovieStoreApp.Infrastructure.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\bin\Debug\net6.0\MovieStoreApp.Infrastructure.pdb
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\bin\Debug\net6.0\MovieStoreApp.Core.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\bin\Debug\net6.0\MovieStoreApp.Core.pdb
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.AssemblyInfo.cs
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.csproj.CopyComplete
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\refint\MovieStoreApp.Infrastructure.dll
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\MovieStoreApp.Infrastructure.pdb
+C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.Infrastructure\obj\Debug\net6.0\ref\MovieStoreApp.Infrastructure.dll

@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "MovieStoreApp.WebMVC/1.0.0": {
+        "dependencies": {
+          "MovieStoreApp.Infrastructure": "1.0.0"
+        },
+        "runtime": {
+          "MovieStoreApp.WebMVC.dll": {}
+        }
+      },
+      "MovieStoreApp.Core/1.0.0": {
+        "runtime": {
+          "MovieStoreApp.Core.dll": {}
+        }
+      },
+      "MovieStoreApp.Infrastructure/1.0.0": {
+        "dependencies": {
+          "MovieStoreApp.Core": "1.0.0"
+        },
+        "runtime": {
+          "MovieStoreApp.Infrastructure.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "MovieStoreApp.WebMVC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieStoreApp.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "MovieStoreApp.Infrastructure/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
