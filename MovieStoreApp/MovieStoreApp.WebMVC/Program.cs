@@ -1,9 +1,32 @@
+using Microsoft.EntityFrameworkCore;
+using MovieStoreApp.Core.Contract.Repository;
+using MovieStoreApp.Core.Contract.Service;
+using MovieStoreApp.Core.Contract.Services;
+using MovieStoreApp.Infrastructure.Data;
+using MovieStoreApp.Infrastructure.Repository;
+using MovieStoreApp.Infrastructure.Service;
+using MovieStoreApp.Infrastructure.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //code below this was written in configureservices method
 #region ConfigureServices
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MovieContext>(option =>
+{
+    option.UseSqlServer(builder.Configuration.GetConnectionString("MovieStore"));
+});
+
+// repository
+builder.Services.AddScoped<IMovieRepositoryAsync, MovieRepositoryAsync>();
+builder.Services.AddScoped<IMovieCastRepositoryAsync, MovieCastRepositoryAsync>();
+builder.Services.AddScoped<ICastRepositoryAsync, CastRepositoryAsync>();
+
+//services
+builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
+builder.Services.AddScoped<IMovieCastService, MovieCastService>();
+builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
 #endregion
 
 //code below this was written in configure method and it will contain middleware

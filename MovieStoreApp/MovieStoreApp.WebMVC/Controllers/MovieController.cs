@@ -1,43 +1,34 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MovieStoreApp.Core.Contract.Service;
+using MovieStoreApp.Core.Contract.Services;
 using MovieStoreApp.WebMVC.Models;
-using MovieStoreApp.WebMVC.Repository;
 
 namespace MovieStoreApp.WebMVC.Controllers
 {
     public class MovieController : Controller
     {
-        MovieRepository movieRepository;
-        public MovieController()
+        IMovieServiceAsync movieService;
+        IMovieCastService movieCastService;
+        public MovieController(IMovieServiceAsync ser, IMovieCastService service)
         {
-            movieRepository = new MovieRepository();
-        }
-        public IActionResult Index()
+            movieService = ser;
+            movieCastService = service;
+
+         }
+        public async Task<IActionResult> Index()
         {
             ViewBag.Title = "All Movies";
 
-            IEnumerable<MovieModel> lstMovies = movieRepository.GetAll();
-            return View(lstMovies);
-        }
-        public IActionResult Detail(int movieId)
-        {
-            MovieModel movieModel = movieRepository.GetById(movieId);
-            return View(movieModel);
-        }
-
-        public IActionResult Create()
-        {
+            //var result = await movieService.GetTop10RevenueMoviesAsync();
             return View();
         }
 
-        [HttpPost]
-        public IActionResult Create(MovieModel movieModel)
+        public async Task <IActionResult> Detail(int movieId)
         {
-            //call the repository insert method to save the movie in database
-            if (movieModel.Title != null)
-            {
-                return RedirectToAction("Index");
-            }
-            return View(movieModel);
+            var result = await movieService.GetByIdAsync(movieId);
+            result.MovieCasts = await movieCastService.GetAllByMovieId(movieId);
+            return View(result);
         }
+
     }
 }

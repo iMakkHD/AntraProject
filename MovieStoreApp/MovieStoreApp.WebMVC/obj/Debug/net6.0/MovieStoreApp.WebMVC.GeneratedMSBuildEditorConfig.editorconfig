@@ -15,6 +15,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\makst\OneDrive\Desktop\Work Stuff\FinalProject\FinalProject\MovieStoreApp\MovieStoreApp.WebMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Cast/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Cast/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FzdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -27,10 +35,6 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Movie/Create.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcQ3JlYXRlLmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Movie/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcRGV0YWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -39,8 +43,20 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTW92aWVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Shared/Components/LatestMovie/latestmovie.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcTGF0ZXN0TW92aWVcbGF0ZXN0bW92aWUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Shared/Components/TopMovie/default.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXENvbXBvbmVudHNcVG9wTW92aWVcZGVmYXVsdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Shared/_MovieCard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Nb3ZpZUNhcmQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/makst/OneDrive/Desktop/Work Stuff/FinalProject/FinalProject/MovieStoreApp/MovieStoreApp.WebMVC/Views/Shared/_ValidationScriptsPartial.cshtml]
