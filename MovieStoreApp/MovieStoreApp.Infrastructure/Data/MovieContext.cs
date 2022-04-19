@@ -19,6 +19,10 @@ namespace MovieStoreApp.Infrastructure.Data
         public DbSet<Genre> Genre { get; set; }
         public DbSet<MovieCast> MovieCast { get; set; }
         public DbSet<Review> Review { get; set; }
+        public DbSet<Role> Role { get; set; }
+        public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<Purchase> Purchase { get; set; }
+        public DbSet<Favorite> Favorite { get; set; }
 
     }
 }

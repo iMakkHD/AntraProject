@@ -10,9 +10,8 @@ namespace MovieStoreApp.Core.Entity
 {
     public class Review
     {
-        //[Key, Column(Order = 0)]
+        public int Id { get; set; }
         public int MovieId { get; set; }
-        //[Key, Column(Order = 1)]
         public int UserId { get; set; }
         public decimal Rating { get; set; }
         [MaxLength(1000)]
