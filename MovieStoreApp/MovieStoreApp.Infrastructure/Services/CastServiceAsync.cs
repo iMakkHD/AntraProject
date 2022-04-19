@@ -27,5 +27,42 @@ namespace MovieStoreApp.Infrastructure.Service
             c.Gender = model.Gender;
             return await castRepositoryAsync.InsertAsync(c);
         }
+
+        public async Task<IEnumerable<CastModel>> GetAllCastAsync()
+        {
+            var result = await castRepositoryAsync.GetAllAsync();
+            if (result != null)
+            {
+                List<CastModel> list = new List<CastModel>();
+                foreach (var item in result)
+                {
+                    CastModel model = new CastModel();
+                    model.Id = item.Id;
+                    model.Name = item.Name;
+                    model.TmdbUrl = item.TmdbUrl;
+                    model.ProfilePath = item.ProfilePath;
+                    model.Gender = item.Gender;
+                    list.Add(model);
+                }
+                return list;
+            }
+            return null;
+        }
+
+        public async Task<CastModel> GetCastAsync(int id)
+        {
+            var item = await castRepositoryAsync.GetAsync(id);
+            if (item != null)
+            {
+                CastModel model = new CastModel();
+                model.Id = item.Id;
+                model.Name = item.Name;
+                model.TmdbUrl = item.TmdbUrl;
+                model.ProfilePath = item.ProfilePath;
+                model.Gender = item.Gender;
+                return model;
+            }
+            return null;
+        }
     }
 }

@@ -13,9 +13,9 @@
 		<div class="col-8">
 			<ul class="list-group">
 				<li class="list-group-item">Title - @Model.Title</li>
-				<li class="list-group-item">Tagline - @Model.Tag</li>
-				<li class="list-group-item">Runtime - @Model.Runtime | Budget: $@Model.Budget</li>
-				<li class="list-group-item">Description - @Model.Overview</li>
+				<li class="list-group-item">Tagline - @Model.Tag | Price: @Model.Price</li>
+				<li class="list-group-item">Revenue: @Model.Revenue | Budget: $@Model.Budget</li>
+				<li class="list-group-item">Description - @Model.Overview | Runtime - @Model.Runtime</li>
 				<li class="list-group-item">Language - @Model.OriginalLanguage | Release Date - @Model.ReleaseDate</li>
 			</ul>
 			<div class="row">
@@ -23,7 +23,7 @@
                 {
                     <div class="col-6 mb-4">
                         <div class="card" style="width: 18rem;">
-                            <img src="@mcast.Cast.ProfilePath" width="50px" height="200px" class="card-img-top" alt="...">
+                            <img src="@mcast.Cast.ProfilePath" width="50px" height="400px" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title">@mcast.Cast.Name</h5>
                                 <p class="card-text">@mcast.Cast.Gender</p>
