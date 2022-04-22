@@ -82,8 +82,8 @@ namespace MovieStoreApp.Infrastructure.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasMaxLength(20)
-                        .HasColumnType("Varchar(20)");
+                        .HasMaxLength(100)
+                        .HasColumnType("Varchar(100)");
 
                     b.HasKey("Id");
 
@@ -186,6 +186,25 @@ namespace MovieStoreApp.Infrastructure.Migrations
                     b.ToTable("MovieCast");
                 });
 
+            modelBuilder.Entity("MovieStoreApp.Core.Entity.MovieGenre", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("GenreId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("MovieGenre");
+                });
+
             modelBuilder.Entity("MovieStoreApp.Core.Entity.Purchase", b =>
                 {
                     b.Property<int>("Id")
@@ -259,6 +278,91 @@ namespace MovieStoreApp.Infrastructure.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Role");
+                });
+
+            modelBuilder.Entity("MovieStoreApp.Core.Entity.Trailer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("MovieId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("Varchar(250)");
+
+                    b.Property<string>("TrailerUrl")
+                        .IsRequired()
+                        .HasMaxLength(250)
+                        .HasColumnType("Varchar(250)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Trailer");
+                });
+
+            modelBuilder.Entity("MovieStoreApp.Core.Entity.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("AccessFailedCount")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("DateOfBirth")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("Varchar(200)");
+
+                    b.Property<string>("FirstName")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("Varchar(200)");
+
+                    b.Property<string>("HashedPassword")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("Varchar(200)");
+
+                    b.Property<bool>("IsLocked")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("LastLoginDateTime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("LastName")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("LockedEndDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("PhoneNumber")
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("Varchar(50)");
+
+                    b.Property<string>("Salt")
+                        .IsRequired()
+                        .HasMaxLength(400)
+                        .HasColumnType("Varchar(400)");
+
+                    b.Property<bool>("TwoFactorEnabled")
+                        .HasColumnType("bit");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("User");
                 });
 
             modelBuilder.Entity("MovieStoreApp.Core.Entity.UserRole", b =>

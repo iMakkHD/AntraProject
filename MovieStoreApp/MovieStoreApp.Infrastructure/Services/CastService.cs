@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace MovieStoreApp.Infrastructure.Service
 {
-    public class CastServiceAsync : ICastServiceAsync
+    public class CastService : ICastService
     {
-        ICastRepositoryAsync castRepositoryAsync;
-        public CastServiceAsync(ICastRepositoryAsync _castRepositoryAsync)
+        ICastRepository castRepositoryAsync;
+        public CastService(ICastRepository _castRepositoryAsync)
         {
             castRepositoryAsync = _castRepositoryAsync;
         }
@@ -61,6 +61,27 @@ namespace MovieStoreApp.Infrastructure.Service
                 model.ProfilePath = item.ProfilePath;
                 model.Gender = item.Gender;
                 return model;
+            }
+            return null;
+        }
+
+        public async Task<IEnumerable<CastModel>> GetCastNameAsync(string name)
+        {
+            var result = await castRepositoryAsync.GetCastByNameAsync(name);
+            if (result != null)
+            {
+                List<CastModel> list = new List<CastModel>();
+                foreach (var item in result)
+                {
+                    CastModel model = new CastModel();
+                    model.Id = item.Id;
+                    model.Name = item.Name;
+                    model.TmdbUrl = item.TmdbUrl;
+                    model.ProfilePath = item.ProfilePath;
+                    model.Gender = item.Gender;
+                    list.Add(model);
+                }
+                return list;
             }
             return null;
         }

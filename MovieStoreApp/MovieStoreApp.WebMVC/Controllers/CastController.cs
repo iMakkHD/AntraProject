@@ -9,8 +9,8 @@ namespace MovieStoreApp.WebMVC.Controllers
     //[Route("cast")]
     public class CastController : Controller
     {
-        private readonly ICastServiceAsync castServiceAsync;
-        public CastController(ICastServiceAsync _castServiceAsync)
+        private readonly ICastService castServiceAsync;
+        public CastController(ICastService _castServiceAsync)
         {
             castServiceAsync = _castServiceAsync;
         }
@@ -49,6 +49,12 @@ namespace MovieStoreApp.WebMVC.Controllers
             //call the service to insert the data
 
             return View(model);
+        }
+
+        public IActionResult Fetch(string name)
+        {
+            var result = castServiceAsync.GetCastNameAsync(name);
+            return View(result);
         }
     }
 }

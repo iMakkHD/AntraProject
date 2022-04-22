@@ -20,7 +20,7 @@ namespace MovieStoreApp.Infrastructure.Repository
 
         public async Task<IEnumerable<Movie>> GetTop10RevenueMoviesAsync()
         {
-            return await context.Movie.OrderByDescending(x => x.Revenue).Take(3).ToListAsync();
+            return await context.Movie.OrderByDescending(x => x.Revenue).Take(10).ToListAsync();
         }
 
         public async Task<IEnumerable<Movie>> GetTop3LatestMoviesAsync()

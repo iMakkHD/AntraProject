@@ -17,5 +17,7 @@ namespace MovieStoreApp.Core.Entity
         [MaxLength(1000)]
         [Column(TypeName = "Varchar")]
         public string ReviewText { get; set; }
+        public virtual User User { get; set; }  //lazy loading
+        public virtual Movie Movie { get; set; }  //virtual properties help in lazy loading
     }
 }

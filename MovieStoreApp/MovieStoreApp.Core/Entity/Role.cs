@@ -14,5 +14,6 @@ namespace MovieStoreApp.Core.Entity
         [MaxLength(300)]
         [Column(TypeName = "Varchar")]
         public string Name { get; set; }
+        public virtual ICollection<UserRole> UserRole { get; set; }
     }
 }

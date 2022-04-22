@@ -21,12 +21,14 @@ builder.Services.AddDbContext<MovieContext>(option =>
 // repository
 builder.Services.AddScoped<IMovieRepositoryAsync, MovieRepositoryAsync>();
 builder.Services.AddScoped<IMovieCastRepositoryAsync, MovieCastRepositoryAsync>();
-builder.Services.AddScoped<ICastRepositoryAsync, CastRepositoryAsync>();
+builder.Services.AddScoped<ICastRepository, CastRepositoryAsync>();
+builder.Services.AddScoped<IGenreRepository, GenreRepositoryAsync>();
 
 //services
 builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
 builder.Services.AddScoped<IMovieCastService, MovieCastService>();
-builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
+builder.Services.AddScoped<ICastService, CastService>();
+builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
 #endregion
 
 //code below this was written in configure method and it will contain middleware

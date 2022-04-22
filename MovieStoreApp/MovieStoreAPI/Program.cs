@@ -1,8 +1,10 @@
 using MovieStoreApp.Core.Contract.Repository;
 using MovieStoreApp.Core.Contract.Service;
+using MovieStoreApp.Core.Contract.Services;
 using MovieStoreApp.Infrastructure.Data;
 using MovieStoreApp.Infrastructure.Repository;
 using MovieStoreApp.Infrastructure.Service;
+using MovieStoreApp.Infrastructure.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,11 +18,13 @@ builder.Services.AddSqlServer<MovieContext>(builder.Configuration.GetConnectionS
 
 
 //services
-builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
+builder.Services.AddScoped<ICastService, CastService>();
+builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
 
 
 //repository
-builder.Services.AddScoped<ICastRepositoryAsync, CastRepositoryAsync>();
+builder.Services.AddScoped<ICastRepository, CastRepositoryAsync>();
+builder.Services.AddScoped<IGenreRepository, GenreRepositoryAsync>();
 
 
 var app = builder.Build();
