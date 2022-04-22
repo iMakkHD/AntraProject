@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class PurchaseService : IPurchaseServiceAsync
+    public class PurchaseServiceAsync : IPurchaseServiceAsync
     {
         IPurchaseRepositoryAsync purchaseRepository;
-        public PurchaseService(IPurchaseRepositoryAsync _movie)
+        public PurchaseServiceAsync(IPurchaseRepositoryAsync _movie)
         {
             purchaseRepository = _movie;
         }

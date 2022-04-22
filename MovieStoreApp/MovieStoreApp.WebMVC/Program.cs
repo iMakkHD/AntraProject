@@ -18,17 +18,34 @@ builder.Services.AddDbContext<MovieContext>(option =>
     option.UseSqlServer(builder.Configuration.GetConnectionString("MovieStore"));
 });
 
-// repository
-builder.Services.AddScoped<IMovieRepositoryAsync, MovieRepositoryAsync>();
-builder.Services.AddScoped<IMovieCastRepositoryAsync, MovieCastRepositoryAsync>();
-builder.Services.AddScoped<ICastRepository, CastRepositoryAsync>();
-builder.Services.AddScoped<IGenreRepository, GenreRepositoryAsync>();
-
 //services
-builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
-builder.Services.AddScoped<IMovieCastServiceAsync, MovieCastService>();
 builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
 builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
+builder.Services.AddScoped<IFavoriteServiceAsync, FavoriteServiceAsync>();
+builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
+builder.Services.AddScoped<IMovieCastServiceAsync, MovieCastServiceAsync>();
+builder.Services.AddScoped<IMovieGenreServiceAsync, MovieGenreServiceAsync>();
+builder.Services.AddScoped<IPurchaseServiceAsync, PurchaseServiceAsync>();
+builder.Services.AddScoped<IReviewServiceAsync, ReviewServiceAsync>();
+builder.Services.AddScoped<IRoleServiceAsync, RoleServiceAsync>();
+builder.Services.AddScoped<ITrailerServiceAsync, TrailerServiceAsync>();
+builder.Services.AddScoped<IUserServiceAsync, UserServiceAsync>();
+builder.Services.AddScoped<IUserRoleServiceAsync, UserRoleServiceAsync>();
+
+
+//repository
+builder.Services.AddScoped<ICastRepositoryAsync, CastRepositoryAsync>();
+builder.Services.AddScoped<IGenreRepositoryAsync, GenreRepositoryAsync>();
+builder.Services.AddScoped<IFavoriteRepository, FavoriteRepositoryAsync>();
+builder.Services.AddScoped<IMovieRepositoryAsync, MovieRepositoryAsync>();
+builder.Services.AddScoped<IMovieCastRepositoryAsync, MovieCastRepositoryAsync>();
+builder.Services.AddScoped<IMovieGenreRepositoryAsync, MovieGenreRepositoryAsync>();
+builder.Services.AddScoped<IPurchaseRepositoryAsync, PurchaseRepositoryAsync>();
+builder.Services.AddScoped<IReviewRepositoryAsync, ReviewRepositoryAsync>();
+builder.Services.AddScoped<IRoleRepositoryAsync, RoleRepositoryAsync>();
+builder.Services.AddScoped<ITrailerRepositoryAsync, TrailerRepositoryAsync>();
+builder.Services.AddScoped<IUserRepositoryAsync, UserRepositoryAsync>();
+builder.Services.AddScoped<IUserRoleRepositoryAsync, UserRoleRepositoryAsync>();
 #endregion
 
 //code below this was written in configure method and it will contain middleware

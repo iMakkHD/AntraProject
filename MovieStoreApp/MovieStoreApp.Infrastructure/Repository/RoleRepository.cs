@@ -10,10 +10,10 @@ using MovieStoreApp.Infrastructure.Data;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class RoleRepository : BaseRepositoryAsync<Role>, IRoleRepositoryAsync
+    public class RoleRepositoryAsync : BaseRepositoryAsync<Role>, IRoleRepositoryAsync
     {
         MovieContext _movieContext;
-        public RoleRepository(MovieContext _db) : base(_db)
+        public RoleRepositoryAsync(MovieContext _db) : base(_db)
         {
             _movieContext = _db;
         }

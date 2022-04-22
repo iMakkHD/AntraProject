@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class MovieGenreService : IMovieGenreServiceAsync
+    public class MovieGenreServiceAsync : IMovieGenreServiceAsync
     {
         IMovieGenreRepositoryAsync movieGenreRepository;
-        public MovieGenreService(IMovieGenreRepositoryAsync _movie)
+        public MovieGenreServiceAsync(IMovieGenreRepositoryAsync _movie)
         {
             movieGenreRepository = _movie;
         }

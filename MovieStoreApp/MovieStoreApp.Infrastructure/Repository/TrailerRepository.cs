@@ -10,10 +10,10 @@ using MovieStoreApp.Infrastructure.Data;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class TrailerRepository : BaseRepositoryAsync<Trailer>, ITrailerRepositoryAsync
+    public class TrailerRepositoryAsync : BaseRepositoryAsync<Trailer>, ITrailerRepositoryAsync
     {
         MovieContext _movieContext;
-        public TrailerRepository(MovieContext _db) : base(_db)
+        public TrailerRepositoryAsync(MovieContext _db) : base(_db)
         {
             _movieContext = _db;
         }

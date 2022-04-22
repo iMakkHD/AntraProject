@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class GenreRepositoryAsync : BaseRepositoryAsync<Genre>, IGenreRepository
+    public class GenreRepositoryAsync : BaseRepositoryAsync<Genre>, IGenreRepositoryAsync
     {
         MovieContext context;
         public GenreRepositoryAsync(MovieContext _db) : base(_db)

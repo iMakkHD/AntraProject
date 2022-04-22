@@ -12,8 +12,8 @@ namespace MovieStoreApp.Infrastructure.Service
 {
     public class CastServiceAsync : ICastServiceAsync
     {
-        ICastRepository castRepositoryAsync;
-        public CastServiceAsync(ICastRepository _castRepositoryAsync)
+        ICastRepositoryAsync castRepositoryAsync;
+        public CastServiceAsync(ICastRepositoryAsync _castRepositoryAsync)
         {
             castRepositoryAsync = _castRepositoryAsync;
         }

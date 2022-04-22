@@ -10,10 +10,10 @@ using MovieStoreApp.Infrastructure.Data;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class ReviewRepository : BaseRepositoryAsync<Review>, IReviewRepositoryAsync
+    public class ReviewRepositoryAsync : BaseRepositoryAsync<Review>, IReviewRepositoryAsync
     {
         MovieContext context;
-        public ReviewRepository(MovieContext _db) : base(_db)
+        public ReviewRepositoryAsync(MovieContext _db) : base(_db)
         {
             context = _db;
         }

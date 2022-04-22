@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class UserService: IUserServiceAsync
+    public class UserServiceAsync: IUserServiceAsync
     {
         IUserRepositoryAsync userRepository;
-        public UserService(IUserRepositoryAsync _movie)
+        public UserServiceAsync(IUserRepositoryAsync _movie)
         {
             userRepository = _movie;
         }

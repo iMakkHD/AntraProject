@@ -10,10 +10,10 @@ using MovieStoreApp.Infrastructure.Data;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class MovieGenreRepository : BaseRepositoryAsync<MovieGenre>, IMovieGenreRepositoryAsync
+    public class MovieGenreRepositoryAsync : BaseRepositoryAsync<MovieGenre>, IMovieGenreRepositoryAsync
     {
         MovieContext context;
-        public MovieGenreRepository(MovieContext _db) : base(_db)
+        public MovieGenreRepositoryAsync(MovieContext _db) : base(_db)
         {
             context = _db;
         }

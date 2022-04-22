@@ -8,10 +8,10 @@ using System.Threading.Tasks;
 using MovieStoreApp.Core.Contract.Repository;
 namespace MovieStoreApp.Infrastructure.Service
 {
-    public class MovieCastService : IMovieCastServiceAsync
+    public class MovieCastServiceAsync : IMovieCastServiceAsync
     {
         IMovieCastRepositoryAsync movieCastRepository;
-        public MovieCastService(IMovieCastRepositoryAsync _movie)
+        public MovieCastServiceAsync(IMovieCastRepositoryAsync _movie)
         {
             movieCastRepository = _movie;
         }

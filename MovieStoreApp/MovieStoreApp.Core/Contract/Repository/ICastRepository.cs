@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieStoreApp.Core.Contract.Repository
 {
-    public interface ICastRepository : IRepositoryAsync<Cast>
+    public interface ICastRepositoryAsync : IRepositoryAsync<Cast>
     {
         Task<IEnumerable<Cast>> GetCastByNameAsync(string name);
 

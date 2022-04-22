@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class ReviewService : IReviewServiceAsync
+    public class ReviewServiceAsync : IReviewServiceAsync
     {
         IReviewRepositoryAsync reviewRepository;
-        public ReviewService(IReviewRepositoryAsync _movie)
+        public ReviewServiceAsync(IReviewRepositoryAsync _movie)
         {
             reviewRepository = _movie;
         }

@@ -9,10 +9,10 @@ using MovieStoreApp.Infrastructure.Data;
 
 namespace MovieStoreApp.Infrastructure.Repository
 {
-    public class UserRepository : BaseRepositoryAsync<User>, IUserRepositoryAsync
+    public class UserRepositoryAsync : BaseRepositoryAsync<User>, IUserRepositoryAsync
     {
         MovieContext context;
-        public UserRepository(MovieContext _db) : base(_db)
+        public UserRepositoryAsync(MovieContext _db) : base(_db)
         {
             context = _db;
         }

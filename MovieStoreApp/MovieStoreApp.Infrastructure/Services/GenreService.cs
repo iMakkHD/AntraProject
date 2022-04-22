@@ -12,9 +12,9 @@ namespace MovieStoreApp.Infrastructure.Services
 {
     public class GenreServiceAsync : IGenreServiceAsync
     {
-        IGenreRepository genreRepositoryAsync;
+        IGenreRepositoryAsync genreRepositoryAsync;
 
-        public GenreServiceAsync(IGenreRepository _genreRepositoryAsync)
+        public GenreServiceAsync(IGenreRepositoryAsync _genreRepositoryAsync)
         {
             genreRepositoryAsync = _genreRepositoryAsync;
         }

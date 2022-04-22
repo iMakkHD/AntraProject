@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class UserRoleService: IUserRoleServiceAsync
+    public class UserRoleServiceAsync: IUserRoleServiceAsync
     {
         IUserRoleRepositoryAsync userRoleRepository;
-        public UserRoleService(IUserRoleRepositoryAsync _movie)
+        public UserRoleServiceAsync(IUserRoleRepositoryAsync _movie)
         {
             userRoleRepository = _movie;
         }

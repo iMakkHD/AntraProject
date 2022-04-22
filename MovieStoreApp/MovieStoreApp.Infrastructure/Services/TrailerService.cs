@@ -9,10 +9,10 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Infrastructure.Services
 {
-    public class TrailerService : ITrailerServiceAsync
+    public class TrailerServiceAsync : ITrailerServiceAsync
     {
         ITrailerRepositoryAsync trailerRepository;
-        public TrailerService(ITrailerRepositoryAsync _movie)
+        public TrailerServiceAsync(ITrailerRepositoryAsync _movie)
         {
             trailerRepository = _movie;
         }
