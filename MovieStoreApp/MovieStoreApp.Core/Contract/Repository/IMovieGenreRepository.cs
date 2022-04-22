@@ -7,7 +7,7 @@ using MovieStoreApp.Core.Entity;
 
 namespace MovieStoreApp.Core.Contract.Repository
 {
-    public interface IMovieGenreRepository : IRepositoryAsync<MovieGenre>
+    public interface IMovieGenreRepositoryAsync : IRepositoryAsync<MovieGenre>
     {
         Task<IEnumerable<MovieGenre>> GetMGByMovieIdAsync(int movieId);
         Task<IEnumerable<MovieGenre>> GetMGByGenreIdAsync(int genreId);

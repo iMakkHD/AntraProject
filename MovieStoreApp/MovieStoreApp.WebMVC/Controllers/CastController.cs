@@ -9,8 +9,8 @@ namespace MovieStoreApp.WebMVC.Controllers
     //[Route("cast")]
     public class CastController : Controller
     {
-        private readonly ICastService castServiceAsync;
-        public CastController(ICastService _castServiceAsync)
+        private readonly ICastServiceAsync castServiceAsync;
+        public CastController(ICastServiceAsync _castServiceAsync)
         {
             castServiceAsync = _castServiceAsync;
         }

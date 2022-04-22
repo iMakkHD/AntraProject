@@ -7,9 +7,11 @@ using System.Threading.Tasks;
 
 namespace MovieStoreApp.Core.Contract.Service
 {
-    public interface IMovieCastService
+    public interface IMovieCastServiceAsync
     {
-        Task<IEnumerable<MovieCastModel>> GetAllByMovieId(int id);
+        Task<IEnumerable<MovieCastModel>> GetAllByMovieIdAsync(int movieId);
+        Task<IEnumerable<MovieCastModel>> GetAllByCastIdAsync(int castId);
+
 
     }
 }

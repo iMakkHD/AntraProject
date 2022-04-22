@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace MovieStoreApp.Core.Contract.Service
 {
-    public interface ICastService
+    public interface ICastServiceAsync
     {
         Task<int> AddCastAsync(CastModel model);
         Task<IEnumerable<CastModel>> GetAllCastAsync();

@@ -4,11 +4,20 @@
 @{
     Layout = null;
 }
+<style>
+body {
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20191106/pngtree-blue-film-film-curled-film-movie-film-and-television-works-image_321322.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+<body>
 <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
 <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
 <link rel="stylesheet" href="~/MovieStoreApp.WebMVC.styles.css" asp-append-version="true" />
-<h1>This is the login page</h1>
-<form>
+<center>
+<form asp-controller="Movie" asp-action="Index">
   <div class="mb-3">
     <label for="exampleDropdownFormEmail2" class="form-label">Email address</label>
     <input type="email" class="form-control" id="exampleDropdownFormEmail2" placeholder="email@example.com">
@@ -27,3 +36,5 @@
   </div>
   <button type="submit" class="btn btn-primary">Sign in</button>
 </form>
+</center>
+</body>

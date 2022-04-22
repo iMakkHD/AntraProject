@@ -8,8 +8,8 @@ namespace MovieStoreApp.WebMVC.Controllers
     public class MovieController : Controller
     {
         IMovieServiceAsync movieService;
-        IMovieCastService movieCastService;
-        public MovieController(IMovieServiceAsync ser, IMovieCastService service)
+        IMovieCastServiceAsync movieCastService;
+        public MovieController(IMovieServiceAsync ser, IMovieCastServiceAsync service)
         {
             movieService = ser;
             movieCastService = service;
@@ -26,7 +26,7 @@ namespace MovieStoreApp.WebMVC.Controllers
         public async Task <IActionResult> Detail(int movieId)
         {
             var result = await movieService.GetByIdAsync(movieId);
-            result.MovieCasts = await movieCastService.GetAllByMovieId(movieId);
+            result.MovieCasts = await movieCastService.GetAllByMovieIdAsync(movieId);
             return View(result);
         }
 

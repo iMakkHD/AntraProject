@@ -21,19 +21,5 @@ namespace MovieStoreAPI.Controllers
             return Ok(await genreServiceAsync.GetAllGenreAsync());
 
         }
-
-        [HttpGet]
-        [Route("{id:int}")]
-        public async Task<IActionResult> Get(int id)
-        {
-            return Ok(await genreServiceAsync.GetGenreAsync(id));
-        }
-
-        [HttpPost]
-        [Route("add")]
-        public async Task<IActionResult> Create([FromBody] GenreModel model)
-        {
-            return Ok(await genreServiceAsync.AddGenreAsync(model));
-        }
     }
 }

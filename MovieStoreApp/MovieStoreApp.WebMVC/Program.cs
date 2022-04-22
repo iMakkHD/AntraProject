@@ -26,8 +26,8 @@ builder.Services.AddScoped<IGenreRepository, GenreRepositoryAsync>();
 
 //services
 builder.Services.AddScoped<IMovieServiceAsync, MovieServiceAsync>();
-builder.Services.AddScoped<IMovieCastService, MovieCastService>();
-builder.Services.AddScoped<ICastService, CastService>();
+builder.Services.AddScoped<IMovieCastServiceAsync, MovieCastService>();
+builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
 builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
 #endregion
 

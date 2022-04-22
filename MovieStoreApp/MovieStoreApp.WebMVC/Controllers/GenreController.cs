@@ -6,9 +6,9 @@ namespace MovieStoreApp.WebMVC.Controllers
     public class GenreController : Controller
     {
         IGenreServiceAsync genreService;
-        IMovieGenreService movieGenreService;
+        IMovieGenreServiceAsync movieGenreService;
 
-        public GenreController(IGenreServiceAsync ser, IMovieGenreService service)
+        public GenreController(IGenreServiceAsync ser, IMovieGenreServiceAsync service)
         {
             genreService = ser;
             movieGenreService = service;

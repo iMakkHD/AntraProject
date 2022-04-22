@@ -7,8 +7,8 @@ using MovieStoreApp.Core.Models;
 
 namespace MovieStoreApp.Core.Contract.Services
 {
-    public interface IMovieGenreService
+    public interface IMovieGenreServiceAsync
     {
-        Task<IEnumerable<MovieGenreModel>> GetTop5Genre();
+        Task<IEnumerable<MovieGenreModel>> GetAllGenresAsync();
     }
 }

@@ -10,10 +10,10 @@ using System.Threading.Tasks;
 
 namespace MovieStoreApp.Infrastructure.Service
 {
-    public class CastService : ICastService
+    public class CastServiceAsync : ICastServiceAsync
     {
         ICastRepository castRepositoryAsync;
-        public CastService(ICastRepository _castRepositoryAsync)
+        public CastServiceAsync(ICastRepository _castRepositoryAsync)
         {
             castRepositoryAsync = _castRepositoryAsync;
         }

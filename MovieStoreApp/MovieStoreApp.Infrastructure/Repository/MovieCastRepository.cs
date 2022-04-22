@@ -17,10 +17,15 @@ namespace MovieStoreApp.Infrastructure.Repository
         {
             context = _db;
         }
-        public async Task<IEnumerable<MovieCast>> GetAllByMovieIdAsync(int movieId)
+
+        public async Task<IEnumerable<MovieCast>> GetAllByCastIdAsync(int castId)
         {
-            return await context.MovieCast.Include("Cast").Where(x => x.MovieId == movieId).ToListAsync();
+            return await context.MovieCast.Where(x => x.CastId == castId).ToListAsync();
         }
 
+        public async Task<IEnumerable<MovieCast>> GetAllByMovieIdAsync(int movieId)
+        {
+            return await context.MovieCast.Where(x => x.MovieId == movieId).ToListAsync();
+        }
     }
 }

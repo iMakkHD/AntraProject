@@ -18,7 +18,7 @@ builder.Services.AddSqlServer<MovieContext>(builder.Configuration.GetConnectionS
 
 
 //services
-builder.Services.AddScoped<ICastService, CastService>();
+builder.Services.AddScoped<ICastServiceAsync, CastServiceAsync>();
 builder.Services.AddScoped<IGenreServiceAsync, GenreServiceAsync>();
 
 
